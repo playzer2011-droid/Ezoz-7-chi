@@ -849,7 +849,6 @@ carousel {
   font-size: 1rem;
 }
 
-
 .group-carousel {
   display: flex;
   align-items: center;
@@ -871,7 +870,6 @@ carousel {
 .group-slider::-webkit-scrollbar {
   display: none;
 }
-
 
 .group-card {
   flex: 0 0 calc((100% - 50px) / 3);
@@ -899,7 +897,6 @@ carousel {
     0 0 20px rgba(0, 255, 157, 0.05);
 }
 
-
 .group-image {
   width: 100%;
   height: 280px;
@@ -918,7 +915,6 @@ carousel {
   transform: scale(1.08);
 }
 
-
 .group-info {
   padding: 20px;
 }
@@ -936,7 +932,6 @@ carousel {
   font-size: 0.9rem;
   line-height: 1.5;
 }
-
 
 .group-btn {
   flex-shrink: 0;
@@ -971,7 +966,6 @@ carousel {
 
   box-shadow: 0 0 20px rgba(0, 255, 157, 0.4);
 }
-
 
 .group-dots {
   display: flex;
@@ -1025,5 +1019,48 @@ carousel {
     width: 42px;
     height: 42px;
     font-size: 1.2rem;
+  }
+}
+.projects-carousel {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  width: 100%;
+}
+
+.projects-list {
+  display: flex;
+  flex-direction: row; 
+  gap: 25px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+  width: 100%;
+  padding: 15px 5px;
+}
+
+.projects-list::-webkit-scrollbar {
+  display: none;
+}
+
+.project-card {
+  flex: 0 0 100%;
+  scroll-snap-align: center;
+  margin-left: 0;
+  width: 100%;
+  border-radius: 24px;
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  transition: transform 0.3s ease;
+}
+
+@media (max-width: 850px) {
+  .project-card {
+    flex-direction: column;
   }
 }

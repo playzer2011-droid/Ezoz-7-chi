@@ -103,3 +103,22 @@ groupSlider.addEventListener("scroll", () => {
     dot.classList.toggle("active", index === currentGroupSlide);
   });
 });
+const projectsSlider = document.getElementById("projectsSlider");
+const projectsPrevBtn = document.querySelector(".projects-prev");
+const projectsNextBtn = document.querySelector(".projects-next");
+
+if (projectsSlider && projectsPrevBtn && projectsNextBtn) {
+  projectsNextBtn.addEventListener("click", () => {
+    projectsSlider.scrollBy({
+      left: projectsSlider.clientWidth,
+      behavior: "smooth",
+    });
+  });
+
+  projectsPrevBtn.addEventListener("click", () => {
+    projectsSlider.scrollBy({
+      left: -projectsSlider.clientWidth,
+      behavior: "smooth",
+    });
+  });
+}
