@@ -1,169 +1,146 @@
 <!doctype html>
-<html lang="rus">
+<html lang="uz">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ilyosbek - Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
+    <meta
+      name="description"
+      content="Ilyosbek — PDP Juniorda frontend dasturlashni o'rganayotgan 14 yoshli dasturchi portfoliosi."
+    />
+    <meta name="theme-color" content="#030706" />
+    <title>Ilyosbek — Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&family=Fredoka:wght@500;600&display=swap"
+      rel="stylesheet"
+    />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="bg-grid"></div>
-    <div class="bg-glow"></div>
+    <div class="bg-grid" aria-hidden="true"></div>
+    <div class="bg-glow" aria-hidden="true"></div>
 
-    <div class="container">
-      <header class="navbar-wrapper">
-        <nav class="navbar">
-          <div class="logo">Ilyosbek</div>
-          <ul class="nav-links">
-            <li>
-              <a href="#about"><span class="num">01</span> Men Haqimda</a>
-            </li>
-            <li>
-              <a href="#oilam"><span class="num">02</span> Oilam</a>
-            </li>
-            <li>
-              <a href="#loyihalarim"><span class="num">03</span> Loyahalarim</a>
-            </li>
-            <li>
-              <a href="#guruhim"><span class="num">04</span> Guruhim</a>
-            </li>
-            <li>
-              <a href="#aloqa"><span class="num">05</span> Aloqa</a>
-            </li>
-          </ul>
-        </nav>
-      </header>
+    <header class="navbar-wrapper">
+      <nav class="navbar" aria-label="Asosiy menyu">
+        <a href="#top" class="logo">Ilyosbek</a>
 
+        <button
+          class="nav-toggle"
+          aria-label="Menyuni ochish"
+          aria-expanded="false"
+          aria-controls="navLinks"
+        >
+          <span></span><span></span><span></span>
+        </button>
+
+        <ul class="nav-links" id="navLinks">
+          <li>
+            <a href="#about"><span class="num">01</span> Men haqimda</a>
+          </li>
+          <li>
+            <a href="#oilam"><span class="num">02</span> Oilam</a>
+          </li>
+          <li>
+            <a href="#loyihalarim"><span class="num">03</span> Loyihalarim</a>
+          </li>
+          <li>
+            <a href="#guruhim"><span class="num">04</span> Guruhim</a>
+          </li>
+          <li>
+            <a href="#aloqa"><span class="num">05</span> Aloqa</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="container" id="top">
+      <!-- HERO -->
       <section class="hero">
         <div class="hero-text">
-          <div
-            data-aos="zoom-in-up"
-            data-aos-easing="linear"
-            data-aos-duration="1500"
-            class="tag-location"
-          >
+          <div class="tag-location" data-aos="fade-up">
             // PDP Junior · Tashkent
           </div>
-          <h1
-            data-aos="zoom-in-up"
-            data-aos-easing="linear"
-            data-aos-duration="1500"
-            class="hero-title"
-          >
+          <h1 class="hero-title" data-aos="fade-up" data-aos-delay="100">
             Salom, men <br />
             <span class="highlight-text">Ilyosbek</span>
           </h1>
-          <p
-            data-aos="zoom-in-up"
-            data-aos-easing="linear"
-            data-aos-duration="1500"
-            class="hero-description"
-          >
+          <p class="hero-description" data-aos="fade-up" data-aos-delay="200">
             14 yoshli kelajak frontend dasturchisi. Sayt yasashni, futbolni va
             g'oyalarni hayotga tatbiq etishni sevaman.
           </p>
-          <div
-            data-aos="zoom-in-up"
-            data-aos-easing="linear"
-            data-aos-duration="1500"
-            class="hero-buttons"
-          >
+          <div class="hero-buttons" data-aos="fade-up" data-aos-delay="300">
             <a href="#about" class="btn btn-primary">Meni tanish &rarr;</a>
             <a href="#loyihalarim" class="btn btn-secondary">Loyihalarim</a>
           </div>
         </div>
 
-        <div class="hero-image-wrapper">
+        <div class="hero-image-wrapper" data-aos="zoom-in" data-aos-delay="200">
           <div class="badge badge-top">⚽ Futbol fan</div>
-          <div class="image--card">
+          <div class="image-card image-card--hero">
             <img
-              data-aos="flip-down"
-              data-aos-easing="linear"
-              data-aos-duration="1500"
               src="./imagese/image_2026-09-26_17-02-44.png"
-              alt="Ilyosbek"
-              class="profile--img"
+              alt="Ilyosbek portreti"
+              class="profile-img"
+              width="320"
+              height="380"
             />
           </div>
           <div class="badge badge-bottom">3+ oy · PDP</div>
         </div>
       </section>
 
+      <!-- ABOUT -->
       <section class="section" id="about">
         <div class="section-header">
-          <span class="num--badge">01</span>
+          <span class="num-badge">01</span>
           <h2>Men haqimda</h2>
         </div>
 
         <div class="about-content">
-          <div class="about-image-wrapper">
-            <div class="image-card">
-              <img
-                data-aos="flip-left"
-                data-aos-easing="ease-out-cubic"
-                data-aos-duration="2000"
-                src="/imagese/image.png"
-                alt="Ilyosbek"
-                class="profile-img"
-              />
-              <div data-aos="flip-left" class="image-badge">
-                9-I Sinf O'quvchisi
-              </div>
-            </div>
+          <div class="image-card image-card--about" data-aos="fade-right">
+            <img
+              src="./imagese/image.png"
+              alt="Ilyosbek"
+              class="profile-img"
+              loading="lazy"
+            />
+            <div class="image-badge">9-I sinf o'quvchisi</div>
           </div>
 
           <div class="about-info">
-            <p class="about-intro">
+            <p class="about-intro" data-aos="fade-left">
               Salom! Ismim <strong>Ilyosbek</strong>, 166-maktab 9-I sinf
-              o'quvchisiman. PDP Juniorda <span>3 oydan beri</span> <br />
+              o'quvchisiman. PDP Juniorda <span>3 oydan beri</span>
               dasturlashni o'rganaman va kelajakda professional dasturchi
               bo'lishni orzu qilaman.
             </p>
 
             <div class="info-list">
-              <div
-                data-aos="fade-left"
-                data-aos-easing="ease-in-sine"
-                data-aos-offset="300"
-                class="info-item"
-              >
+              <div class="info-item" data-aos="fade-left" data-aos-delay="50">
                 <span class="info-icon">🎂</span>
                 <div class="info-text">
                   <span class="label">Tug'ilgan sanam</span>
                   <span class="value">21.09.2011</span>
                 </div>
               </div>
-              <div
-                data-aos="fade-left"
-                data-aos-easing="ease-in-sine"
-                data-aos-offset="300"
-                class="info-item"
-              >
+              <div class="info-item" data-aos="fade-left" data-aos-delay="100">
                 <span class="info-icon">🏫</span>
                 <div class="info-text">
                   <span class="label">Maktabim</span>
                   <span class="value">166-maktab, 9-I sinf</span>
                 </div>
               </div>
-              <div
-                data-aos="fade-left"
-                data-aos-easing="ease-in-sine"
-                data-aos-offset="300"
-                class="info-item"
-              >
+              <div class="info-item" data-aos="fade-left" data-aos-delay="150">
                 <span class="info-icon">💻</span>
                 <div class="info-text">
                   <span class="label">Hozir o'rganyapman</span>
-                  <span class="value">Sayt yasash — HTML va CSS.</span>
+                  <span class="value">Sayt yasash — HTML va CSS</span>
                 </div>
               </div>
-              <div
-                data-aos="fade-left"
-                data-aos-easing="ease-in-sine"
-                data-aos-offset="300"
-                class="info-item"
-              >
+              <div class="info-item" data-aos="fade-left" data-aos-delay="200">
                 <span class="info-icon">⚽</span>
                 <div class="info-text">
                   <span class="label">Sevimli mashg'ulot</span>
@@ -175,386 +152,482 @@
         </div>
       </section>
 
-      <div class="family-carousel">
-        <button class="carousel-btn prev" aria-label="Oldingi">←</button>
-
-        <div class="cards-grid" id="familySlider">
-          <div class="card">
-            <div class="card-img-wrapper">
-              <img
-                src="/imagese/image copy 6.png"
-                alt="Dadam"
-                class="card-img"
-              />
-            </div>
-            <div class="card-body">
-              <h3>Dadam</h3>
-              <span class="age">41 yosh</span>
-              <p>
-                Meni doim yangi marralar sari va IT sohasida
-                qo'llab-quvvatlaydilar.
-              </p>
-            </div>
-          </div>
-
-          <div class="card">
-            <div class="card-img-wrapper">
-              <img
-                src="/imagese/image copy 5.png"
-                alt="Onam"
-                class="card-img"
-              />
-            </div>
-            <div class="card-body">
-              <h3>Onam</h3>
-              <span class="age">33 yosh</span>
-              <p>
-                Darslarimni yaxshi o'zlashtirishim va kompyuterda erkin
-                ishlashim uchun g'amxo'rdirlar.
-              </p>
-            </div>
-          </div>
-
-          <div class="card">
-            <div class="card-img-wrapper">
-              <img
-                src="/imagese/image copy 2.png"
-                alt="Singlim"
-                class="card-img"
-              />
-            </div>
-            <div class="card-body">
-              <h3>Singlim</h3>
-              <span class="age">7 yosh</span>
-              <p>
-                Birgalikda uy vazifalarini bajaramiz va bo'sh vaqtimizni quvnoq
-                o'tkazamiz.
-              </p>
-            </div>
-          </div>
-
-          <div class="card">
-            <div class="card-img-wrapper">
-              <img
-                src="/imagese/image copy 4.png"
-                alt="Ukam"
-                class="card-img"
-              />
-            </div>
-            <div class="card-body">
-              <h3>Ukam</h3>
-              <span class="age">13 yosh</span>
-              <p>
-                Birgalikda uy vazifalarini bajaramiz va bo'sh vaqtimizni quvnoq
-                o'tkazamiz.
-              </p>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-img-wrapper">
-              <img
-                src="/imagese/image copy 3.png"
-                alt="Ukam"
-                class="card-img"
-              />
-            </div>
-            <div class="card-body">
-              <h3>Ukam</h3>
-              <span class="age">11 yosh</span>
-              <p>
-                Birgalikda uy vazifalarini bajaramiz va bo'sh vaqtimizni quvnoq
-                o'tkazamiz.
-              </p>
-            </div>
-          </div>
+      <!-- FAMILY -->
+      <section class="section" id="oilam">
+        <div class="section-header">
+          <span class="num-badge">02</span>
+          <h2>Oilam</h2>
         </div>
+        <p class="section-sub">
+          Meni qo'llab-quvvatlaydigan eng yaqin odamlarim.
+        </p>
+        <p class="section-hint">Rasmni to'liq ko'rish uchun ustiga bosing.</p>
 
-        <button class="carousel-btn next" aria-label="Keyingi">→</button>
-      </div>
+        <div class="carousel" data-carousel data-dots>
+          <button class="carousel-btn" data-prev aria-label="Oldingi">←</button>
 
+          <div class="track cols-3">
+            <article class="card">
+              <button
+                class="card-img-wrapper"
+                data-lightbox
+                aria-label="Dadam rasmini kattalashtirish"
+              >
+                <img
+                  src="./imagese/image copy 27.png"
+                  alt="Dadam"
+                  class="card-img"
+                  loading="lazy"
+                />
+              </button>
+              <div class="card-body">
+                <h3>Dadam</h3>
+                <span class="age">41 yosh</span>
+                <p>
+                  Meni doim yangi marralar sari va IT sohasida
+                  qo'llab-quvvatlaydilar.
+                </p>
+              </div>
+            </article>
+
+            <article class="card">
+              <button
+                class="card-img-wrapper"
+                data-lightbox
+                aria-label="Onam rasmini kattalashtirish"
+              >
+                <img
+                  src="./imagese/image copy 5.png"
+                  alt="Onam"
+                  class="card-img"
+                  loading="lazy"
+                />
+              </button>
+              <div class="card-body">
+                <h3>Onam</h3>
+                <span class="age">33 yosh</span>
+                <p>
+                  Darslarimni yaxshi o'zlashtirishim va kompyuterda erkin
+                  ishlashim uchun g'amxo'rdirlar.
+                </p>
+              </div>
+            </article>
+
+            <article class="card">
+              <button
+                class="card-img-wrapper"
+                data-lightbox
+                aria-label="Singlim rasmini kattalashtirish"
+              >
+                <img
+                  src="./imagese/image copy 2.png"
+                  alt="Singlim"
+                  class="card-img"
+                  loading="lazy"
+                />
+              </button>
+              <div class="card-body">
+                <h3>Singlim</h3>
+                <span class="age">7 yosh</span>
+                <p>
+                  Birgalikda uy vazifalarini bajaramiz va bo'sh vaqtimizni
+                  quvnoq o'tkazamiz.
+                </p>
+              </div>
+            </article>
+
+            <article class="card">
+              <button
+                class="card-img-wrapper"
+                data-lightbox
+                aria-label="Ukam rasmini kattalashtirish"
+              >
+                <img
+                  src="./imagese/image copy 4.png"
+                  alt="Ukam"
+                  class="card-img"
+                  loading="lazy"
+                />
+              </button>
+              <div class="card-body">
+                <h3>Ukam</h3>
+                <span class="age">13 yosh</span>
+                <p>
+                  Birgalikda uy vazifalarini bajaramiz va bo'sh vaqtimizni
+                  quvnoq o'tkazamiz.
+                </p>
+              </div>
+            </article>
+
+            <article class="card">
+              <button
+                class="card-img-wrapper"
+                data-lightbox
+                aria-label="Ukam rasmini kattalashtirish"
+              >
+                <img
+                  src="./imagese/image copy 3.png"
+                  alt="Ukam"
+                  class="card-img"
+                  loading="lazy"
+                />
+              </button>
+              <div class="card-body">
+                <h3>Ukam</h3>
+                <span class="age">11 yosh</span>
+                <p>
+                  Birgalikda uy vazifalarini bajaramiz va bo'sh vaqtimizni
+                  quvnoq o'tkazamiz.
+                </p>
+              </div>
+            </article>
+          </div>
+
+          <button class="carousel-btn" data-next aria-label="Keyingi">→</button>
+        </div>
+        <div class="dots" data-dots-container></div>
+      </section>
+
+      <!-- PROJECTS -->
       <section class="section" id="loyihalarim">
         <div class="projects-title-box">
           <h2>Loyihalarim</h2>
         </div>
 
-        <div class="projects-carousel">
-          <button class="carousel-btn projects-prev" aria-label="Oldingi">
-            ←
-          </button>
+        <div class="carousel" data-carousel data-dots>
+          <button class="carousel-btn" data-prev aria-label="Oldingi">←</button>
 
-          <div class="projects-list" id="projectsSlider">
-            <div
-              data-aos="fade-up"
-              data-aos-duration="1500"
-              class="project-card project-green"
-            >
+          <div class="track cols-1">
+            <article class="project-card project-green">
               <div class="project-info">
                 <h3>BIO CWT</h3>
-                <p>ajoyib animatsiyalarga to'la sayt</p>
+                <p>Ajoyib animatsiyalarga to'la sayt</p>
                 <a
                   target="_blank"
+                  rel="noopener"
                   href="https://ilyos3oylikproject.vercel.app/"
                   class="btn-project"
                   >Saytni ko'rish</a
                 >
               </div>
               <div class="project-preview">
-                <img src="/imagese/image copy 8.png" alt="Rent Car Sayti" />
+                <img
+                  src="./imagese/image copy 8.png"
+                  alt="BIO CWT sayti"
+                  loading="lazy"
+                />
               </div>
-            </div>
+            </article>
 
-            <div
-              data-aos="fade-up"
-              data-aos-duration="1500"
-              class="project-card project-red"
-            >
+            <article class="project-card project-red">
               <div class="project-info">
                 <h3>Bella Olanje</h3>
-                <p>taom yetkazib berish sayti</p>
+                <p>Taom yetkazib berish sayti</p>
                 <a
                   target="_blank"
+                  rel="noopener"
                   href="https://cocking.vercel.app/"
                   class="btn-project"
                   >Saytni ko'rish</a
                 >
               </div>
               <div class="project-preview">
-                <img src="/imagese/image copy 9.png" alt="Landing Sahifa" />
+                <img
+                  src="./imagese/image copy 9.png"
+                  alt="Bella Olanje sayti"
+                  loading="lazy"
+                />
               </div>
-            </div>
+            </article>
 
-            <div
-              data-aos="fade-up"
-              data-aos-duration="1500"
-              class="project-card project-yellow"
-            >
+            <article class="project-card project-yellow">
               <div class="project-info">
                 <h3>Moshinalar sotish</h3>
-                <p>sifatli moshinalar uchun sayt</p>
+                <p>Sifatli moshinalar uchun sayt</p>
                 <a
                   target="_blank"
+                  rel="noopener"
                   href="https://sell-cars-taupe.vercel.app/"
                   class="btn-project"
                   >Saytni ko'rish</a
                 >
               </div>
               <div class="project-preview">
-                <img src="/imagese/image copy 10.png" alt="Moshinalar sayti" />
+                <img
+                  src="./imagese/image copy 10.png"
+                  alt="Moshinalar sotish sayti"
+                  loading="lazy"
+                />
               </div>
-            </div>
+            </article>
 
-            <div
-              data-aos="fade-up"
-              data-aos-duration="1500"
-              class="project-card project-blue"
-            >
+            <article class="project-card project-blue">
               <div class="project-info">
                 <h3>Game Zone</h3>
-                <p>mening ajoyib saytlarimdan biri</p>
+                <p>Mening ajoyib saytlarimdan biri</p>
                 <a
                   target="_blank"
+                  rel="noopener"
                   href="https://gamezone-nine-mu.vercel.app/"
                   class="btn-project"
                   >Saytni ko'rish</a
                 >
               </div>
               <div class="project-preview">
-                <img src="/imagese/image copy 23.png" alt="Tile Build" />
+                <img
+                  src="./imagese/image copy 23.png"
+                  alt="Game Zone sayti"
+                  loading="lazy"
+                />
               </div>
-            </div>
+            </article>
           </div>
 
-          <button class="carousel-btn projects-next" aria-label="Keyingi">
-            →
-          </button>
+          <button class="carousel-btn" data-next aria-label="Keyingi">→</button>
         </div>
       </section>
 
-      <section class="group" id="group">
-        <div class="group-inner">
-          <div class="section-header">
-            <span class="num-badge">04</span>
-            <h2>Mening guruhim</h2>
-          </div>
-
-          <p class="section-sub">PDP Junior'dagi ajoyib guruhdoshlarim.</p>
-
-          <div class="group-carousel">
-            <button class="group-btn group-prev" aria-label="Oldingi">←</button>
-
-            <div class="group-slider" id="groupSlider">
-              <div class="group-card">
-                <div class="group-image">
-                  <img src="/imagese/image copy 12.png" alt="Javohir" />
-                </div>
-
-                <div class="group-info">
-                  <h3>Javohir</h3>
-                  <p>Ishni tez va toza qiladigan o'quvchi</p>
-                </div>
-              </div>
-
-              <div class="group-card">
-                <div class="group-image">
-                  <img src="/imagese/image copy.png" alt="Yusuf" />
-                </div>
-
-                <div class="group-info">
-                  <h3>Yusuf</h3>
-                  <p>Tezroq qilishga harakat qiladigan o'quvchi</p>
-                </div>
-              </div>
-
-              <div class="group-card">
-                <div class="group-image">
-                  <img src="/imagese/image copy 13.png" alt="Shoxrux" />
-                </div>
-
-                <div class="group-info">
-                  <h3>Shohrux</h3>
-                  <p>Sinifimizning chaqqon o'quvchisi</p>
-                </div>
-              </div>
-
-              <div class="group-card">
-                <div class="group-image">
-                  <img src="/imagese/image copy 14.png" alt="Husnida" />
-                </div>
-
-                <div class="group-info">
-                  <h3>Husnida</h3>
-                  <p>Tezkor va yaxshi o'quvchilardan biri</p>
-                </div>
-              </div>
-
-              <div class="group-card">
-                <div class="group-image">
-                  <img src="/imagese/image copy 15.png" alt="Shoxjaxon" />
-                </div>
-
-                <div class="group-info">
-                  <h3>Shoxjahon</h3>
-                  <p>sportsmen o'quvchi</p>
-                </div>
-              </div>
-
-              <div class="group-card">
-                <div class="group-image">
-                  <img src="/imagese/image copy 16.png" alt="Muhammad Ali" />
-                </div>
-
-                <div class="group-info">
-                  <h3>Muhammad ali</h3>
-                  <p>yangi kelgan guruhdosh</p>
-                </div>
-              </div>
-
-              <div class="group-card">
-                <div class="group-image">
-                  <img src="/imagese/image copy 17.png" alt="Botir" />
-                </div>
-
-                <div class="group-info">
-                  <h3>BOtir</h3>
-                  <p>Guguhimizda hech nima bilmaydigon o'quvchimiz</p>
-                </div>
-              </div>
-              <div class="group-card">
-                <div class="group-image">
-                  <img src="/imagese/image copy 18.png" alt="Dovud" />
-                </div>
-
-                <div class="group-info">
-                  <h3>Dovud</h3>
-                  <p>Guruhimizning faol o'quvchilaridan biri</p>
-                </div>
-              </div>
-              <div class="group-card">
-                <div class="group-image">
-                  <img src="/imagese/image copy 19.png" alt="Sunat" />
-                </div>
-
-                <div class="group-info">
-                  <h3>Sunat</h3>
-                  <p>Roblox o'ynaydigon o'quvchi</p>
-                </div>
-              </div>
-              <div class="group-card">
-                <div class="group-image">
-                  <img src="/imagese/image copy 20.png" alt="Jafar" />
-                </div>
-
-                <div class="group-info">
-                  <h3>Jafar</h3>
-                  <p>Guruhimizning faol o'quvchilaridan biri</p>
-                </div>
-              </div>
-              <div class="group-card">
-                <div class="group-image">
-                  <img src="/imagese/image copy 21.png" alt="Ozod" />
-                </div>
-
-                <div class="group-info">
-                  <h3>Ozod</h3>
-                  <p>Guruhimizning faol o'quvchilaridan biri</p>
-                </div>
-              </div>
-              <div class="group-card">
-                <div class="group-image">
-                  <img src="/imagese/image copy 22.png" alt="Muhammad Ali" />
-                </div>
-
-                <div class="group-info">
-                  <h3>Muhammad Ali</h3>
-                  <p>Roblox o'ynaydigon o'quvchilaridan biri</p>
-                </div>
-              </div>
-            </div>
-
-            <button class="group-btn group-next" aria-label="Keyingi">→</button>
-          </div>
-
-          <div class="group-dots" id="groupDots"></div>
+      <!-- GROUP -->
+      <section class="section" id="guruhim">
+        <div class="section-header">
+          <span class="num-badge">04</span>
+          <h2>Mening guruhim</h2>
         </div>
+        <p class="section-sub">PDP Junior'dagi ajoyib guruhdoshlarim.</p>
+
+        <div class="carousel" data-carousel data-dots>
+          <button class="carousel-btn" data-prev aria-label="Oldingi">←</button>
+
+          <div class="track cols-3">
+            <article class="group-card">
+              <div class="group-image">
+                <img
+                  src="./imagese/image copy 12.png"
+                  alt="Javohir"
+                  loading="lazy"
+                />
+              </div>
+              <div class="group-info">
+                <h3>Javohir</h3>
+                <p>Ishni tez va toza qiladigan o'quvchi</p>
+              </div>
+            </article>
+            <article class="group-card">
+              <div class="group-image">
+                <img
+                  src="./imagese/image copy.png"
+                  alt="Yusuf"
+                  loading="lazy"
+                />
+              </div>
+              <div class="group-info">
+                <h3>Yusuf</h3>
+                <p>Tezroq qilishga harakat qiladigan o'quvchi</p>
+              </div>
+            </article>
+            <article class="group-card">
+              <div class="group-image">
+                <img
+                  src="./imagese/image copy 13.png"
+                  alt="Shohrux"
+                  loading="lazy"
+                />
+              </div>
+              <div class="group-info">
+                <h3>Shohrux</h3>
+                <p>Sinfimizning chaqqon o'quvchisi</p>
+              </div>
+            </article>
+            <article class="group-card">
+              <div class="group-image">
+                <img
+                  src="./imagese/image copy 14.png"
+                  alt="Husnida"
+                  loading="lazy"
+                />
+              </div>
+              <div class="group-info">
+                <h3>Husnida</h3>
+                <p>Tezkor va yaxshi o'quvchilardan biri</p>
+              </div>
+            </article>
+            <article class="group-card">
+              <div class="group-image">
+                <img
+                  src="./imagese/image copy 15.png"
+                  alt="Shohjahon"
+                  loading="lazy"
+                />
+              </div>
+              <div class="group-info">
+                <h3>Shohjahon</h3>
+                <p>Sportsmen o'quvchi</p>
+              </div>
+            </article>
+            <article class="group-card">
+              <div class="group-image">
+                <img
+                  src="./imagese/image copy 16.png"
+                  alt="Muhammad Ali"
+                  loading="lazy"
+                />
+              </div>
+              <div class="group-info">
+                <h3>Muhammad Ali</h3>
+                <p>Yangi kelgan guruhdosh</p>
+              </div>
+            </article>
+            <article class="group-card">
+              <div class="group-image">
+                <img
+                  src="./imagese/image copy 17.png"
+                  alt="Botir"
+                  loading="lazy"
+                />
+              </div>
+              <div class="group-info">
+                <h3>Botir</h3>
+                <p>Guruhimizning quvnoq o'quvchisi</p>
+              </div>
+            </article>
+            <article class="group-card">
+              <div class="group-image">
+                <img
+                  src="./imagese/image copy 18.png"
+                  alt="Dovud"
+                  loading="lazy"
+                />
+              </div>
+              <div class="group-info">
+                <h3>Dovud</h3>
+                <p>Guruhimizning faol o'quvchilaridan biri</p>
+              </div>
+            </article>
+            <article class="group-card">
+              <div class="group-image">
+                <img
+                  src="./imagese/image copy 19.png"
+                  alt="Sunat"
+                  loading="lazy"
+                />
+              </div>
+              <div class="group-info">
+                <h3>Sunat</h3>
+                <p>Roblox o'ynaydigan o'quvchi</p>
+              </div>
+            </article>
+            <article class="group-card">
+              <div class="group-image">
+                <img
+                  src="./imagese/image copy 20.png"
+                  alt="Jafar"
+                  loading="lazy"
+                />
+              </div>
+              <div class="group-info">
+                <h3>Jafar</h3>
+                <p>Guruhimizning faol o'quvchilaridan biri</p>
+              </div>
+            </article>
+            <article class="group-card">
+              <div class="group-image">
+                <img
+                  src="./imagese/image copy 21.png"
+                  alt="Ozod"
+                  loading="lazy"
+                />
+              </div>
+              <div class="group-info">
+                <h3>Ozod</h3>
+                <p>Guruhimizning faol o'quvchilaridan biri</p>
+              </div>
+            </article>
+            <article class="group-card">
+              <div class="group-image">
+                <img
+                  src="./imagese/image copy 22.png"
+                  alt="Muhammad Ali"
+                  loading="lazy"
+                />
+              </div>
+              <div class="group-info">
+                <h3>Muhammad Ali</h3>
+                <p>Roblox o'ynaydigan o'quvchilardan biri</p>
+              </div>
+            </article>
+          </div>
+
+          <button class="carousel-btn" data-next aria-label="Keyingi">→</button>
+        </div>
+        <div class="dots" data-dots-container></div>
       </section>
+    </main>
 
-      <footer class="footer" id="aloqa">
-        <div class="footer-top">
-          <div class="footer-heading">
-            <h1>Men, <span class="highlight">bilan</span><br />bog'laning</h1>
-          </div>
-
-          <div class="footer-contact">
-            <p class="phone">+998 90 811 05 93</p>
-            <p class="email">playzer2011@gmail.com</p>
-            <div class="social-icons">
-              <img class="icon" src="/imagese/image copy 25.png" alt="" />
-              <img class="icon" src="/imagese/image copy 24.png" alt="" />
-              <img class="icon" src="/imagese/image copy 26.png" alt="" />
-            </div>
-          </div>
+    <footer class="footer container" id="aloqa">
+      <div class="footer-top">
+        <div class="footer-heading">
+          <h2>Men <span class="highlight">bilan</span><br />bog'laning</h2>
         </div>
 
-        <ul class="footer-nav">
-          <li><span class="f-num">01</span> Bosh Sahifa</li>
-          <li><span class="f-num">02</span> Men Haqimda</li>
-          <li><span class="f-num">03</span> Oilam</li>
-          <li><span class="f-num">04</span> Loyihalarim</li>
-          <li><span class="f-num">05</span> Guruhim</li>
-        </ul>
-
-        <hr class="footer-line" />
-
-        <div class="footer-bottom">
-          <p>&copy;2026 Ilyosbek. Barcha huquqlar himoyalangan.</p>
-          <p>Tashkent, O'zbekiston</p>
+        <div class="footer-contact">
+          <a class="phone" href="tel:+998908110593">+998 90 811 05 93</a>
+          <a class="email" href="mailto:playzer2011@gmail.com"
+            >playzer2011@gmail.com</a
+          >
+          <div class="social-icons">
+            <img
+              class="icon"
+              src="./imagese/image copy 25.png"
+              alt="Facebook"
+            />
+            <img
+              class="icon"
+              src="./imagese/image copy 24.png"
+              alt="Telegram"
+            />
+            <img
+              class="icon"
+              src="./imagese/image copy 26.png"
+              alt="Instagram"
+            />
+          </div>
         </div>
-      </footer>
-    </div>
+      </div>
+
+      <ul class="footer-nav">
+        <li>
+          <a href="#top"><span class="f-num">01</span> Bosh sahifa</a>
+        </li>
+        <li>
+          <a href="#about"><span class="f-num">02</span> Men haqimda</a>
+        </li>
+        <li>
+          <a href="#oilam"><span class="f-num">03</span> Oilam</a>
+        </li>
+        <li>
+          <a href="#loyihalarim"><span class="f-num">04</span> Loyihalarim</a>
+        </li>
+        <li>
+          <a href="#guruhim"><span class="f-num">05</span> Guruhim</a>
+        </li>
+      </ul>
+
+      <hr class="footer-line" />
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Ilyosbek. Barcha huquqlar himoyalangan.</p>
+        <p>Tashkent, O'zbekiston</p>
+      </div>
+    </footer>
+
+    <!-- Lightbox: shows a family photo in full, uncropped -->
+    <dialog class="lightbox" id="lightbox">
+      <button class="lightbox-close" aria-label="Yopish">✕</button>
+      <img src="" alt="" />
+      <p class="lightbox-caption"></p>
+    </dialog>
+
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
     <script src="./app.js"></script>
   </body>
 </html>
