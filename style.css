@@ -169,10 +169,8 @@ main.container {
 }
 
 .logo {
-  font-size: 1.4rem;
-  font-weight: 800;
-  text-decoration: none;
-  letter-spacing: -0.02em;
+  border-radius: 90px;
+  width: 120px;
 }
 
 .nav-links {
